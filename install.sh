@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Find all files in the home folder and remove the ./home/ prefix
 files=$(find ./home -type f | sed 's,^\./home/,,')
 
 for file in files; do
